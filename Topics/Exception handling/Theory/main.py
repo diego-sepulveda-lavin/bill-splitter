@@ -1,12 +1,10 @@
 #  You can experiment here, it won’t be checked
-def my_func():
-    try:
-        1/0
-    except:
-        1/0
-    finally:
-        return 'Ok'
+email = input()
 
 
+def check_email(address):
+    assert '@' in address, 'Try again!'
+    return 'Done!'
 
-print(my_func())
+
+check_email(email)
